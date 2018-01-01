@@ -30,7 +30,7 @@ MongoClient.connect("mongodb://localhost:27017/baselinedata", function (err, db)
             collection.insert({ collegename,parameter });
         
         if (body[i].paramid==1)
-            collection.update({collegename,parameter},{collegename,parameter,session:{1617 : {stream :{arts:{nostudents:body[i].pha}}}}});
+            collection.update({collegename,parameter},{collegename,parameter,session:{s1617 : {stream :{arts:{nostudents:body[i].pha}}}}});
                
                                 
         } 

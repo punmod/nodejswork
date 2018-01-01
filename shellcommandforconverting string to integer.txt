@@ -1,0 +1,4 @@
+db.mainresult.find( { 'session.s1617.stream.arts.nostudents' : { $type : 2 } } ).forEach( function (x) {   
+  x.session.s1617.stream.arts.nostudents = Int32(x.session.s1617.stream.arts.nostudents); 
+  db.mainresult.save(x);
+});
